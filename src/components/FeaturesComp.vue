@@ -2,24 +2,24 @@
   <div class="container">
     <div class="container__content">
       <div class="col-2">
-        <img src="../assets/img/buy-comics-digital-comics.png" alt="digital comics image">
-        <span>digital comics</span>
+        <img class="col-2" src="../assets/img/buy-comics-digital-comics.png" alt="digital comics image">
+        <span class="col-8">digital comics</span>
       </div>
       <div class="col-2">
-        <img src="../assets/img/buy-comics-merchandise.png" alt="dc merchandise image">
-        <span>dc merchandise</span>
+        <img class="col-2" src="../assets/img/buy-comics-merchandise.png" alt="dc merchandise image">
+        <span class="col-8">dc merchandise</span>
       </div>
       <div class="col-2">
-        <img src="../assets/img/buy-comics-subscriptions.png" alt="subscription image">
-        <span>subscription</span>
+        <img class="col-2" src="../assets/img/buy-comics-subscriptions.png" alt="subscription image">
+        <span class="col-8">subscription</span>
       </div>
       <div class="col-2">
-        <img src="../assets/img/buy-comics-shop-locator.png" alt="comic shop locator image">
-        <span>comic shop locator</span>
+        <img class="col-2" src="../assets/img/buy-comics-shop-locator.png" alt="comic shop locator image">
+        <span class="col-8">comic shop locator</span>
       </div>
       <div class="col-2">
-        <img src="../assets/img/buy-dc-power-visa.svg" alt="dc power visa image">
-        <span>dc power visa</span>
+        <img class="col-2" src="../assets/img/buy-dc-power-visa.svg" alt="dc power visa image">
+        <span class="col-8">dc power visa</span>
       </div>
     </div>
   </div>
@@ -46,11 +46,16 @@ name: 'FeaturesComp',
       text-transform: uppercase;
       color: #fff;
       display: flex;
+      align-items: center;
       flex-wrap: nowrap;
+      margin: 1.5em 0;
       
       img{
-        max-width: 100%;
+        width: 100%;
         height: auto;
+      }
+      span{
+        font-size: 0.9rem;
       }
     }
   }
