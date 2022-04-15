@@ -2,18 +2,24 @@
   <div id="app">
     <HeaderComp></HeaderComp>
     <ContentComp></ContentComp>
+    <FeaturesComp></FeaturesComp>
+    <FooterComp></FooterComp>
   </div>
 </template>
 
 <script>
 import HeaderComp from "./components/HeaderComp.vue";
 import ContentComp from "./components/ContentComp.vue";
+import FeaturesComp from "./components/FeaturesComp.vue";
+import FooterComp from "./components/FooterComp.vue";
 
 export default {
   name: 'App',
   components: {
     HeaderComp,
-    ContentComp
+    ContentComp,
+    FeaturesComp,
+    FooterComp
 }
 }
 </script>
@@ -30,6 +36,11 @@ a{display: inline-block; text-decoration: none;}
 
 // 12 colonne
 @for $i from 1 through 12{
-  .col-#{$i}{width: 100%/12 * $i}
+  .col-#{$i}{max-width: 100%/10 * $i; flex-basis: 100%/10 * $i;}
+}
+
+// right offset
+@for $i from 1 through 12{
+  .right-offset-#{$i}{margin-right: 100%/10 * $i;}
 }
 </style>

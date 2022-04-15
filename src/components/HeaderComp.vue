@@ -27,17 +27,16 @@ name: 'HeaderComp',
 <style scoped lang='scss'>
 .header{
   background-color: #fff;
-  height: 10vh;
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   width: 70%;
   margin: 0 auto;
-  padding: 0.8em 0;
 
   &__logo{
-    max-width: 100%;
+    width: 7%;
     height: auto;
+    padding: 0.5em 0;
   }
 
   &__nav{
@@ -50,8 +49,6 @@ name: 'HeaderComp',
       font-size: 0.9rem;
       color: #000;
       font-weight: 700;
-      display: flex;
-      align-content: center;
     }
   }
 }
