@@ -36,7 +36,6 @@ name: 'HeaderComp',
   &__logo{
     width: 7%;
     height: auto;
-    padding: 0.5em 0;
   }
 
   &__nav{
@@ -49,6 +48,12 @@ name: 'HeaderComp',
       font-size: 0.9rem;
       color: #000;
       font-weight: 700;
+      padding: 2.5em 0;
+      border-bottom: 4px solid transparent;
+    }
+    li:hover{
+      color: #0282f9;
+      border-bottom: 4px solid #0282f9;
     }
   }
 }
