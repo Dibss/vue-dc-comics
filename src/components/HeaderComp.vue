@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <img class="header__logo" src="../assets/img/dc-logo.png" alt="dc logo">
+    <a href="#"><img class="header__logo" src="../assets/img/dc-logo.png" alt="dc logo"></a>
     <nav class="header__nav">
       <ul>
         <a href="#"><li>characters</li></a>
@@ -34,7 +34,7 @@ name: 'HeaderComp',
   margin: 0 auto;
 
   &__logo{
-    width: 5%;
+    width: 70%;
     height: auto;
   }
 

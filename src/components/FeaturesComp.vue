@@ -3,23 +3,23 @@
     <div class="container__content">
       <div class="col-2">
         <img class="col-2" src="../assets/img/buy-comics-digital-comics.png" alt="digital comics image">
-        <span class="col-8">digital comics</span>
+        <a href="#"><span class="col-8">digital comics</span></a>
       </div>
       <div class="col-2">
         <img class="col-2" src="../assets/img/buy-comics-merchandise.png" alt="dc merchandise image">
-        <span class="col-8">dc merchandise</span>
+        <a href="#"><span class="col-8">dc merchandise</span></a>
       </div>
       <div class="col-2">
         <img class="col-2" src="../assets/img/buy-comics-subscriptions.png" alt="subscription image">
-        <span class="col-8">subscription</span>
+        <a href="#"><span class="col-8">subscription</span></a>
       </div>
       <div class="col-2">
         <img class="col-2 mw-15" src="../assets/img/buy-comics-shop-locator.png" alt="comic shop locator image">
-        <span class="col-8">comic shop locator</span>
+        <a href="#"><span class="col-8">comic shop locator</span></a>
       </div>
       <div class="col-2">
         <img class="col-2" src="../assets/img/buy-dc-power-visa.svg" alt="dc power visa image">
-        <span class="col-8">dc power visa</span>
+        <a href="#"><span class="col-8">dc power visa</span></a>
       </div>
     </div>
   </div>
@@ -43,7 +43,6 @@ name: 'FeaturesComp',
 
     div.col-2{
       text-transform: uppercase;
-      color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -58,6 +57,7 @@ name: 'FeaturesComp',
       span{
         font-size: 0.75rem;
         padding-left: 0.8em;
+        color: #fff;
       }
     }
   }
