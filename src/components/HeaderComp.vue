@@ -34,7 +34,7 @@ name: 'HeaderComp',
   margin: 0 auto;
 
   &__logo{
-    width: 7%;
+    width: 5%;
     height: auto;
   }
 

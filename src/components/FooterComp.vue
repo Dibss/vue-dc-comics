@@ -127,13 +127,19 @@ name: 'FooterComp',
 
 .container-bottom{
   background-color: #303030;
-  &__left span{
-    text-transform: uppercase;
-    color: #fff;
-    border: 1px solid #0282f9;
-    padding: 0.5em;
-    font-size: 0.8rem;
-    font-weight: 700;
+  &__left{
+    span{
+      text-transform: uppercase;
+      color: #fff;
+      border: 1px solid #0282f9;
+      padding: 0.5em;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    span:hover{
+      background-color: #0282f9;
+    }
+    
   }
   &__right{
     display: flex;
