@@ -1,9 +1,15 @@
 <template>
   <div id="app">
-    <HeaderComp></HeaderComp>
-    <ContentComp></ContentComp>
-    <FeaturesComp></FeaturesComp>
-    <FooterComp></FooterComp>
+    <header>
+      <HeaderComp></HeaderComp>
+    </header>
+    <main>
+      <ContentComp></ContentComp>
+      <FeaturesComp></FeaturesComp>
+    </main>
+    <footer>
+      <FooterComp></FooterComp>
+    </footer>
   </div>
 </template>
 

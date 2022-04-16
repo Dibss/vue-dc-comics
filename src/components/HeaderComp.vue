@@ -21,6 +21,20 @@
 <script>
 export default {
 name: 'HeaderComp',
+// data: {
+//   menu : [
+//     "characters",
+//     "comics",
+//     "movies",
+//     "tv",
+//     "games",
+//     "collectibles",
+//     "videos",
+//     "fans",
+//     "news",
+//     "shop"
+//   ]
+// }
 }
 </script>
 
