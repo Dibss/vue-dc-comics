@@ -6,44 +6,23 @@
           <div class="col-3">
             <h2>dc comics</h2>
             <ul>
-              <a href="#"><li>characters</li></a>
-              <a href="#"><li>comics</li></a>
-              <a href="#"><li>movies</li></a>
-              <a href="#"><li>tv</li></a>
-              <a href="#"><li>games</li></a>
-              <a href="#"><li>videos</li></a>
-              <a href="#"><li>news</li></a>
+              <a :href="elm.url" v-for="(elm, id) in footerMenu.dcComics" :key="id"><li>{{elm.name}}</li></a>
             </ul>
             <h2>shop</h2>
             <ul>
-              <a href="#"><li>shop DC</li></a>
-              <a href="#"><li>shop DC collectibles</li></a>
+              <a :href="elm.url" v-for="(elm, id) in footerMenu.shop" :key="id"><li>{{elm.name}}</li></a>
             </ul>
           </div>
           <div class="col-3">
             <h2>dc</h2>
             <ul>
-              <a href="#"><li>terms of use</li></a>
-              <a href="#"><li>privacy policy (New)</li></a>
-              <a href="#"><li>ad choices</li></a>
-              <a href="#"><li>advertising</li></a>
-              <a href="#"><li>jobs</li></a>
-              <a href="#"><li>subscription</li></a>
-              <a href="#"><li>talent workshops</li></a>
-              <a href="#"><li>CPSC certificates</li></a>
-              <a href="#"><li>ratings</li></a>
-              <a href="#"><li>shop help</li></a>
-              <a href="#"><li>contacs us</li></a>
+              <a :href="elm.url" v-for="(elm, id) in footerMenu.dc" :key="id"><li>{{elm.name}}</li></a>
             </ul>
           </div>
           <div class="col-3">
             <h2>sites</h2>
             <ul>
-              <a href="#"><li>DC</li></a>
-              <a href="#"><li>MAD magazine</li></a>
-              <a href="#"><li>DC kids</li></a>
-              <a href="#"><li>DC universe</li></a>
-              <a href="#"><li>DC power visa</li></a>
+              <a :href="elm.url" v-for="(elm, id) in footerMenu.sites" :key="id"><li>{{elm.name}}</li></a>
             </ul>
           </div>
         </div>
@@ -82,6 +61,120 @@
 <script>
 export default {
 name: 'FooterComp',
+data(){
+  return{
+    footerMenu : {
+      dcComics : [
+        {
+          name : "characters",
+          url : "#"
+        },
+        {
+          name : "comics",
+          url : "#"
+        },
+        {
+          name : "movies",
+          url : "#"
+        },
+        {
+          name : "tv",
+          url : "#"
+        },
+        {
+          name : "games",
+          url : "#"
+        },
+        {
+          name : "videos",
+          url : "#"
+        },
+        {
+          name : "news",
+          url : "#"
+        }
+      ],
+      shop : [
+        {
+          name : "shop DC",
+          url : "#"
+        },
+        {
+          name : "shop DC collectibles",
+          url : "#"
+        },
+      ],
+      dc : [
+        {
+          name : "terms of use",
+          url : "#"
+        },
+        {
+          name : "privacy policy (New)",
+          url : "#"
+        },
+        {
+          name : "ad choices",
+          url : "#"
+        },
+        {
+          name : "advertising",
+          url : "#"
+        },
+        {
+          name : "jobs",
+          url : "#"
+        },
+        {
+          name : "subscription",
+          url : "#"
+        },
+        {
+          name : "talent workshops",
+          url : "#"
+        },
+        {
+          name : "CPSC certificates",
+          url : "#"
+        },
+        {
+          name : "ratings",
+          url : "#"
+        },
+        {
+          name : "shop help",
+          url : "#"
+        },
+        {
+          name : "contacs us",
+          url : "#"
+        },
+      ],
+      sites : [
+        {
+          name : "DC",
+          url : "#"
+        },
+        {
+          name : "MAD magazine",
+          url : "#"
+        },
+        {
+          name : "DC kids",
+          url : "#"
+        },
+        {
+          name : "DC universe",
+          url : "#"
+        },
+        {
+          name : "DC power visa",
+          url : "#"
+        },
+      ]
+    }
+  }
+}
 }
 </script>
 
@@ -135,7 +228,7 @@ name: 'FooterComp',
       padding: 0.5em;
       font-size: 0.8rem;
       font-weight: 700;
-      
+
       &:hover{
         background-color: #0282f9;
       }
