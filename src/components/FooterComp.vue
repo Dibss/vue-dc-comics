@@ -6,23 +6,23 @@
           <div class="col-3">
             <h2>dc comics</h2>
             <ul>
-              <a :href="elm.url" v-for="(elm, id) in footerMenu.dcComics" :key="id"><li>{{elm.name}}</li></a>
+              <a :href="elm.url" v-for="(elm, i) in footerMenu.dcComics" :key="i"><li>{{elm.name}}</li></a>
             </ul>
             <h2>shop</h2>
             <ul>
-              <a :href="elm.url" v-for="(elm, id) in footerMenu.shop" :key="id"><li>{{elm.name}}</li></a>
+              <a :href="elm.url" v-for="(elm, i) in footerMenu.shop" :key="i"><li>{{elm.name}}</li></a>
             </ul>
           </div>
           <div class="col-3">
             <h2>dc</h2>
             <ul>
-              <a :href="elm.url" v-for="(elm, id) in footerMenu.dc" :key="id"><li>{{elm.name}}</li></a>
+              <a :href="elm.url" v-for="(elm, i) in footerMenu.dc" :key="i"><li>{{elm.name}}</li></a>
             </ul>
           </div>
           <div class="col-3">
             <h2>sites</h2>
             <ul>
-              <a :href="elm.url" v-for="(elm, id) in footerMenu.sites" :key="id"><li>{{elm.name}}</li></a>
+              <a :href="elm.url" v-for="(elm, i) in footerMenu.sites" :key="i"><li>{{elm.name}}</li></a>
             </ul>
           </div>
         </div>
