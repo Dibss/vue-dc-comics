@@ -64,10 +64,11 @@ name: 'HeaderComp',
       font-weight: 700;
       padding: 2.5em 0;
       border-bottom: 4px solid transparent;
-    }
-    li:hover{
-      color: #0282f9;
-      border-bottom: 4px solid #0282f9;
+      
+      &:hover{
+        color: #0282f9;
+        border-bottom: 4px solid #0282f9;
+      }
     }
   }
 }

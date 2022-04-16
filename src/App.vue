@@ -40,13 +40,13 @@ export default {
 li{list-style-type: none;}
 a{display: inline-block; text-decoration: none;}
 
-// 12 colonne
-@for $i from 1 through 12{
+// 10 colonne
+@for $i from 1 through 10{
   .col-#{$i}{max-width: 100%/10 * $i; flex-basis: 100%/10 * $i;}
 }
 
-// right offset
-@for $i from 1 through 12{
+// right offset 10 colonne
+@for $i from 1 through 10{
   .right-offset-#{$i}{margin-right: 100%/10 * $i;}
 }
 </style>

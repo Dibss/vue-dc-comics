@@ -135,11 +135,11 @@ name: 'FooterComp',
       padding: 0.5em;
       font-size: 0.8rem;
       font-weight: 700;
+      
+      &:hover{
+        background-color: #0282f9;
+      }
     }
-    span:hover{
-      background-color: #0282f9;
-    }
-    
   }
   &__right{
     display: flex;
