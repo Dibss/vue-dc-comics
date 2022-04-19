@@ -47,6 +47,15 @@ data(){
 </script>
 
 <style scoped lang='scss'>
+// 10 colonne
+@for $i from 1 through 10{
+  .col-#{$i}{max-width: 100%/10 * $i; flex-basis: 100%/10 * $i;}
+}
+
+// right offset 10 colonne
+@for $i from 1 through 10{
+  .right-offset-#{$i}{margin-right: 100%/10 * $i;}
+}
 .container{
   background-color: #0282f9;
   &__content{
