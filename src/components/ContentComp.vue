@@ -12,7 +12,7 @@ import ComicsComp from "./ComicsComp.vue";
 export default {
 name: 'ContentComp',
 components : {
-    ComicsComp
+  ComicsComp
 }
 }
 </script>
