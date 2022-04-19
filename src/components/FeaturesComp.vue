@@ -77,5 +77,6 @@ data(){
   }
 }
 
+// shop locator img
 .container__content > div:nth-last-of-type(2) img{max-width: 15%;}
 </style>

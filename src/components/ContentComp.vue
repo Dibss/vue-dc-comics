@@ -1,14 +1,19 @@
 <template>
   <div class="container">
     <div class="content">
-      <h2 class="content__title">--> Content goes here</h2>
+      <ComicsComp/>
     </div>
   </div>
 </template>
 
 <script>
+import ComicsComp from "./ComicsComp.vue";
+
 export default {
 name: 'ContentComp',
+components : {
+    ComicsComp
+}
 }
 </script>
 

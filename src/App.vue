@@ -1,14 +1,15 @@
 <template>
   <div id="app">
     <header>
-      <HeaderComp></HeaderComp>
+      <HeaderComp/>
+      <HeroComp/>
     </header>
     <main>
-      <ContentComp></ContentComp>
-      <FeaturesComp></FeaturesComp>
+      <ContentComp/>
+      <FeaturesComp/>
     </main>
     <footer>
-      <FooterComp></FooterComp>
+      <FooterComp/>
     </footer>
   </div>
 </template>
@@ -18,6 +19,7 @@ import HeaderComp from "./components/HeaderComp.vue";
 import ContentComp from "./components/ContentComp.vue";
 import FeaturesComp from "./components/FeaturesComp.vue";
 import FooterComp from "./components/FooterComp.vue";
+import HeroComp from "./components/HeroComp.vue";
 
 export default {
   name: 'App',
@@ -25,7 +27,8 @@ export default {
     HeaderComp,
     ContentComp,
     FeaturesComp,
-    FooterComp
+    FooterComp,
+    HeroComp,
 }
 }
 </script>
