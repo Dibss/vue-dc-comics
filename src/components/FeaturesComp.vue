@@ -1,25 +1,9 @@
 <template>
   <div class="container">
     <div class="container__content">
-      <div class="col-2">
-        <img class="col-2" src="../assets/img/buy-comics-digital-comics.png" alt="digital comics image">
-        <a href="#"><span class="col-8">digital comics</span></a>
-      </div>
-      <div class="col-2">
-        <img class="col-2" src="../assets/img/buy-comics-merchandise.png" alt="dc merchandise image">
-        <a href="#"><span class="col-8">dc merchandise</span></a>
-      </div>
-      <div class="col-2">
-        <img class="col-2" src="../assets/img/buy-comics-subscriptions.png" alt="subscription image">
-        <a href="#"><span class="col-8">subscription</span></a>
-      </div>
-      <div class="col-2">
-        <img class="col-2 mw-15" src="../assets/img/buy-comics-shop-locator.png" alt="comic shop locator image">
-        <a href="#"><span class="col-8">comic shop locator</span></a>
-      </div>
-      <div class="col-2">
-        <img class="col-2" src="../assets/img/buy-dc-power-visa.svg" alt="dc power visa image">
-        <a href="#"><span class="col-8">dc power visa</span></a>
+      <div class="col-2" v-for="(elm, i) in buyImg" :key="i">
+        <img class="col-2" :src="elm.img" :alt="elm.name + 'image'">
+        <a :href="elm.url"><span class="col-8">{{elm.name}}</span></a>
       </div>
     </div>
   </div>
@@ -28,11 +12,41 @@
 <script>
 export default {
 name: 'FeaturesComp',
+data(){
+  return{
+    buyImg : [
+      {
+        name : "digital comics",
+        img : require("../../public/img/buy-comics-digital-comics.png"),
+        url : "#"
+      },
+      {
+        name : "dc merchandise",
+        img : require("../../public/img/buy-comics-merchandise.png"),
+        url : "#"
+      },
+      {
+        name : "subscription",
+        img : require("../../public/img/buy-comics-subscriptions.png"),
+        url : "#"
+      },
+      {
+        name : "comic shop locator",
+        img : require("../../public/img/buy-comics-shop-locator.png"),
+        url : "#"
+      },
+      {
+        name : "dc power visa",
+        img : require("../../public/img/buy-dc-power-visa.svg"),
+        url : "#"
+      }
+    ]
+  }
+}
 }
 </script>
 
 <style scoped lang='scss'>
-.mw-15{max-width: 15%;}
 .container{
   background-color: #0282f9;
   &__content{
@@ -62,4 +76,6 @@ name: 'FeaturesComp',
     }
   }
 }
+
+.container__content > div:nth-last-of-type(2) img{max-width: 15%;}
 </style>
