@@ -27,11 +27,6 @@ components : {
   margin: 0 auto;
   display: flex;
   align-content: center;
-  &__title{
-    color: #fff;
-    font-weight: 700;
-    padding: 2em 0;
-  }
 }
 
 </style>
