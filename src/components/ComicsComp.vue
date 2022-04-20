@@ -101,7 +101,6 @@ data(){
 
 <style scoped lang='scss'>
 .container{
-  margin-top: -10px;
   span{
     color: #fff;
     background-color: #0282f9;
