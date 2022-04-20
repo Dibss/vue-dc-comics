@@ -37,10 +37,10 @@
         </div>
         <div class="container-bottom__right">
           <span>follow us</span>
-          <div v-for="(elm, i) in social" :key="i">
-            <a :href="elm.url"><img :src="elm.img" :alt="elm.name + 'logo'" target="_blank"></a>
+          <ul>
+            <li v-for="(elm, i) in social" :key="i"><a :href="elm.url"><img :src="elm.img" :alt="elm.name + 'logo'" target="_blank"></a></li>
             <!-- TARGET BLANK NON FUNZIONA -->
-          </div>
+          </ul>
         </div>
       </div>
     </div>
@@ -263,6 +263,10 @@ data(){
     display: flex;
     align-items: center;
     margin: 1em 0;
+    ul{
+      display: flex;
+      flex-wrap: nowrap;
+    }
     span{
       text-transform: uppercase;
       color: #0282f9;
