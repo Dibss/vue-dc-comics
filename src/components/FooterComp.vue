@@ -38,19 +38,19 @@
         <div class="container-bottom__right">
           <span>follow us</span>
           <div>
-            <a href="#"><img src="../assets/img/footer-facebook.png" alt="facebook logo"></a>
+            <a href="#"><img src="../../public/img/footer-facebook.png" alt="facebook logo"></a>
           </div>
           <div>
-            <a href="#"><img src="../assets/img/footer-twitter.png" alt="twitter logo"></a>
+            <a href="#"><img src="../../public/img/footer-twitter.png" alt="twitter logo"></a>
           </div>
           <div>
-            <a href="#"><img src="../assets/img/footer-youtube.png" alt="youtube logo"></a>
+            <a href="#"><img src="../../public/img/footer-youtube.png" alt="youtube logo"></a>
           </div>
           <div>
-            <a href="#"><img src="../assets/img/footer-pinterest.png" alt="pinterest logo"></a>
+            <a href="#"><img src="../../public/img/footer-pinterest.png" alt="pinterest logo"></a>
           </div>
           <div>
-            <a href="#"><img src="../assets/img/footer-periscope.png" alt="periscope logo"></a>
+            <a href="#"><img src="../../public/img/footer-periscope.png" alt="periscope logo"></a>
           </div>
         </div>
       </div>
@@ -189,7 +189,7 @@ data(){
   .right-offset-#{$i}{margin-right: 100%/10 * $i;}
 }
 .container-top{
-  background-image: url(../assets/img/footer-bg.jpg);
+  background-image: url(../../public/img/footer-bg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -221,7 +221,7 @@ data(){
 }
 
 .col-4.logo{
-  background-image: url(../assets/img/dc-logo-bg.png);
+  background-image: url(../../public/img/dc-logo-bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

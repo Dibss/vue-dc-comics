@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <a href="#"><img class="header__logo" src="../assets/img/dc-logo.png" alt="dc logo"></a>
+    <a href="#"><img class="header__logo" src="../../public/img/dc-logo.png" alt="dc logo"></a>
     <nav class="header__nav">
       <ul>
         <a :href="elm.url" v-for="(elm, i) in mainNav" :key="i"><li>{{elm.name}}</li></a>
