@@ -37,20 +37,9 @@
         </div>
         <div class="container-bottom__right">
           <span>follow us</span>
-          <div>
-            <a href="#"><img src="../assets/img/footer-facebook.png" alt="facebook logo"></a>
-          </div>
-          <div>
-            <a href="#"><img src="../assets/img/footer-twitter.png" alt="twitter logo"></a>
-          </div>
-          <div>
-            <a href="#"><img src="../assets/img/footer-youtube.png" alt="youtube logo"></a>
-          </div>
-          <div>
-            <a href="#"><img src="../assets/img/footer-pinterest.png" alt="pinterest logo"></a>
-          </div>
-          <div>
-            <a href="#"><img src="../assets/img/footer-periscope.png" alt="periscope logo"></a>
+          <div v-for="(elm, i) in social" :key="i">
+            <a :href="elm.url"><img :src="elm.img" :alt="elm.name + 'logo'" target="_blank"></a>
+            <!-- TARGET BLANK NON FUNZIONA -->
           </div>
         </div>
       </div>
@@ -172,7 +161,34 @@ data(){
           url : "#"
         },
       ]
-    }
+    },
+    social : [
+      {
+        name : "facebook",
+        img : require("../assets/img/footer-facebook.png"),
+        url : "https://www.facebook.com/dc/"
+      },
+      {
+        name : "twitter",
+        img : require("../assets/img/footer-twitter.png"),
+        url : "https://twitter.com/dccomics"
+      },
+      {
+        name : "youtube",
+        img : require("../assets/img/footer-youtube.png"),
+        url : "https://www.youtube.com/channel/UCiifkYAs_bq1pt_zbNAzYGg"
+      },
+      {
+        name : "pinterest",
+        img : require("../assets/img/footer-pinterest.png"),
+        url : "https://www.pinterest.it/dccomics/"
+      },
+      {
+        name : "periscope",
+        img : require("../assets/img/footer-periscope.png"),
+        url : "#"
+      }
+    ]
   }
 }
 }
